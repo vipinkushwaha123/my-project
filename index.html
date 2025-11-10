@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio — Vipin Kushwaha</title>
+  <meta name="description" content="Responsive single-page portfolio with animations, projects, skills, certifications and contact." />
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- theme toggle checkbox (no JS) -->
+  <input type="checkbox" id="theme-toggle" aria-label="toggle theme">
+  <header>
+    <div class="nav-wrap">
+      <div class="logo">
+        <div class="mark">VK</div>
+        <div class="text">
+          <div style="font-weight:700">Vipin Kushwaha</div>
+          <div style="font-size:12px;color:var(--muted)">Frontend Developer</div>
+        </div>
+      </div>
+
+      <nav aria-label="Primary Navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <label for="theme-toggle" class="toggle-label">☀️ / 🌙</label>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="home">
+      <div class="card intro reveal">
+        <h1>Hello — I'm Vipin</h1>
+        <p>Frontend developer building visually engaging, responsive websites. 
+            I enjoy turning ideas into delightful user experiences using HTML, CSS and modern frontend patterns.</p>
+
+        <div style="margin-top:14px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+          <a class="resume-btn" href="/VipinKushwaha_resume.pdf" download>⬇️ Download Resume</a>
+          <div class="social">
+            <a href="#" aria-label="github">
+              <!-- simple SVG icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.92 3.19 9.09 7.61 10.56.56.1.76-.24.76-.53 0-.26-.01-.95-.01-1.86-3.1.67-3.75-1.37-3.75-1.37-.51-1.29-1.24-1.64-1.24-1.64-.99-.67.08-.66.08-.66 1.1.08 1.69 1.13 1.69 1.13.98 1.68 2.56 1.2 3.19.92.1-.72.38-1.2.69-1.48-2.47-.28-5.06-1.24-5.06-5.51 0-1.22.44-2.21 1.16-2.99-.12-.29-.5-1.46.11-3.05 0 0 .95-.3 3.12 1.14a10.8 10.8 0 0 1 2.84-.38c.96 0 1.92.13 2.84.38 2.17-1.44 3.12-1.14 3.12-1.14.62 1.59.24 2.76.12 3.05.72.78 1.16 1.77 1.16 2.99 0 4.28-2.6 5.22-5.08 5.5.39.33.74.98.74 1.98 0 1.43-.01 2.58-.01 2.93 0 .29.2.64.77.53C19.06 20.83 22.25 16.66 22.25 11.75 22.25 5.48 17.27.5 12 .5z" fill="currentColor"/></svg>
+            </a>
+            <a href="#" aria-label="linkedin">
+              <svg width="18" height="18" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8.5 8h4.6v2.2h.1c.6-1.1 2.1-2.2 4.3-2.2 4.6 0 5.4 3 5.4 6.9V24h-5V15.2c0-2.1-.04-4.8-3-4.8-3 0-3.5 2.4-3.5 4.6V24h-5V8z" fill="currentColor"/></svg>
+            </a>
+            <a href="#" aria-label="twitter"> 
+              <svg width="18" height="18" viewBox="0 0 24 24"><path d="M24 4.56c-.89.39-1.85.66-2.85.78a4.95 4.95 0 0 0 2.16-2.73 9.9 9.9 0 0 1-3.14 1.2 4.92 4.92 0 0 0-8.39 4.48A13.97 13.97 0 0 1 1.67 3.15a4.92 4.92 0 0 0 1.52 6.57 4.9 4.9 0 0 1-2.23-.62v.06a4.92 4.92 0 0 0 3.95 4.82 4.9 4.9 0 0 1-2.22.08 4.93 4.93 0 0 0 4.59 3.41A9.86 9.86 0 0 1 0 20.54a13.93 13.93 0 0 0 7.55 2.21c9.05 0 14-7.5 14-14v-.64A9.98 9.98 0 0 0 24 4.56z" fill="currentColor"/></svg>
+            </a>
+            <a href="#" aria-label="dribbble">
+              <svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12C24 5.373 18.627 0 12 0zM19.4 6.2c1.6 1.7 2.3 3.8 2.3 6.1 0 .2 0 .4-.02.6-2.1-.2-4.3.1-6.3 1-1-2.2-2.2-4.4-3.6-6.4 3-.9 5.6-1.1 7.6-1.3z" fill="currentColor"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-wrap">
+        <div class="profile card reveal">
+          <img src="profile.jpeg" alt="profile">
+        </div>
+        <div class="muted">Available for freelance & full-time roles</div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about card reveal">
+      <div>
+        <h2>About Me</h2>
+        <p style="color:var(--muted)">I am a frontend developer specializing in creating pixel-perfect, responsive and accessible user interfaces. I enjoy CSS animations, performance and learning new tools.</p>
+        <p>I love collaborating with designers and developers to ship delightful products. Outside of work I enjoy photography and exploring new UI patterns.</p>
+        <a class="btn" href="#">Read more</a>
+      </div>
+      <div class="about-img">
+        <img src="photo.jpeg" alt="about" style="width:100%;height:100%;object-fit:cover;border-radius:8px">
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="card reveal">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <div class="skill">
+            <div style="display:flex;justify-content:space-between"><strong>HTML &amp; CSS</strong><span class="muted">95%</span></div>
+            <div class="progress" aria-hidden>
+              <span style="width:95%"></span>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div style="display:flex;justify-content:space-between"><strong>JavaScript</strong><span class="muted">85%</span></div>
+            <div class="progress"><span style="width:85%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div style="display:flex;justify-content:space-between"><strong>React</strong><span class="muted">80%</span></div>
+            <div class="progress"><span style="width:80%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div style="display:flex;justify-content:space-between"><strong>Accessibility</strong><span class="muted">78%</span></div>
+            <div class="progress"><span style="width:78%"></span></div>
+          </div>
+        </div>
+
+        <div class="circle">
+          <!-- Circular progress using SVG; percentage reflected in stroke-dasharray -->
+          <svg width="140" height="140" viewBox="0 0 120 120">
+            <defs>
+              <linearGradient id="g1" x1="0%" x2="100%">
+                <stop offset="0%" stop-color="var(--accent)"/>
+                <stop offset="100%" stop-color="#06b6d4"/>
+              </linearGradient>
+            </defs>
+            <circle cx="60" cy="60" r="48" stroke="rgba(0,0,0,0.06)" stroke-width="12" fill="none"/>
+            <circle cx="60" cy="60" r="48" stroke="url(#g1)" stroke-width="12" fill="none" stroke-linecap="round"
+              stroke-dasharray="301.9" stroke-dashoffset="60"></circle>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" style="font-size:18px;fill:var(--text)">82%</text>
+          </svg>
+          <div class="label muted">Overall Proficiency</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="card reveal">
+      <h2>Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-card card">
+          <h4>Web page Designing & development program</h4>
+          <p class="muted">BECIL — 2025</p>
+          <!-- Anchor used instead of JS. Clicking opens the cert (replace href with actual files) -->
+          <a class="view-btn" href="web page.jpg" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+        <div class="cert-card card">
+          <h4>web development workshop</h4>
+          <p class="muted">regentech — 2025</p>
+          <a class="view-btn" href="work shop.jpg" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+        <div class="cert-card card">
+          <h4>jaipuria quiz league</h4>
+          <p class="muted">jaipuria — 2025</p>
+          <a class="view-btn" href="quiz.jpg" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="card reveal">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- 6 sample project cards -->
+        <div class="project card">
+          <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?w=800&q=60" alt="project">
+          <div class="meta">
+            <h5>Landing Page UI</h5>
+            <p class="muted">A responsive marketing landing page with micro-interactions.</p>
+          </div>
+        </div>
+        <div class="project card">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=60" alt="project">
+          <div class="meta">
+            <h5>Dashboard</h5>
+            <p class="muted">Admin dashboard UI with charts & data tables.</p>
+          </div>
+        </div>
+        <div class="project card">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=60" alt="project">
+          <div class="meta">
+            <h5>Portfolio Template</h5>
+            <p class="muted">This portfolio template with animations.</p>
+          </div>
+        </div>
+        <div class="project card">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=60" alt="project">
+          <div class="meta">
+            <h5>E-commerce UI</h5>
+            <p class="muted">Product list and checkout microflow.</p>
+          </div>
+        </div>
+        <div class="project card">
+          <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?w=800&q=60" alt="project">
+          <div class="meta">
+            <h5>Blog Template</h5>
+            <p class="muted">A minimal and readable blog layout.</p>
+          </div>
+        </div>
+        <div class="project card">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=60" alt="project">
+          <div class="meta">
+            <h5>Interactive Form</h5>
+            <p class="muted">Accessible multi-step form interactions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card reveal">
+      <h2>Contact</h2>
+      <form action="#" method="post" class="contact-grid" onsubmit="return false;">
+        <div>
+          <label class="muted">Name</label>
+          <input type="text" required placeholder="Your name">
+        </div>
+        <div>
+          <label class="muted">Email</label>
+          <input type="email" required placeholder="you@example.com">
+        </div>
+        <div style="grid-column:1/-1">
+          <label class="muted">Message</label>
+          <textarea rows="6" placeholder="Say hello!" required></textarea>
+        </div>
+        <div style="grid-column:1/-1">
+          <button class="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="card">
+    <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:12px">
+      <div>
+        <strong>Vipin Kushwaha</strong><div class="muted">Made with ❤️ using HTML &amp; CSS</div>
+      </div>
+      <div class="contact-actions">
+        <a class="call-btn" href="tel:+911234567890">Call: +91 12345 67890</a>
+        <a class="mail-btn" href="mailto:vipin@example.com">Email: vipin@example.com</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
